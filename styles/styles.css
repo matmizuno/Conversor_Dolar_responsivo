@@ -1,0 +1,124 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    margin: 0px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#img-home{
+width: 250px;
+margin-top: 2rem;
+animation: mov-img 2s ease-in-out infinite;
+}
+.title h2{
+    font-size: 40px;
+    color: rgb(19, 61, 19);
+    margin-top: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+#more{
+    margin-top: 15px;
+}
+
+input{
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #242424;
+}
+.btns{
+    margin-top: 1rem;
+}
+ #send{
+    width: 100px;
+    background-color: rgb(42, 90, 42);
+    color: #fff;
+    border: 0px;
+ }
+ #clear{
+    width: 100px;
+    background-color: rgb(212, 65, 65);
+    color: #fff;
+    border: 0px;
+ }
+ #send{
+    margin-top: 10px;
+}
+#result{
+    font-size:  25px;
+    color:rgb(19, 61, 19) ;
+    border-bottom: 1px solid rgb(19, 61, 19);
+}
+
+#send:hover{
+    animation: mov-btn 0.2s ease-in-out both ;
+}
+#clear:hover{
+    animation: mov-btn 0.2s ease-in-out both ;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.container2 h2{
+    color:rgb(19, 61, 19) ;
+    font-size:  30px;
+}
+.resultado{
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 1020px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .title h2{
+        font-size: 35px;
+        color: rgb(19, 61, 19);
+        margin-top: 20px;
+    }
+    .resultado{
+        margin-top: 2rem;
+        margin-left: 0px;
+    }
+    
+}
+
+
+@keyframes mov-img{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+}
+@keyframes mov-btn{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-2px);
+    }
+}

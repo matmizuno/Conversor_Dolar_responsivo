@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img"><img src="assets/img/img-home.png" id="img-home"></div>
+        <div class="title"><h2>Conversor de Dollar</h2></div>
+        <div class="container2">
+            <div class="inputs">
+                <input type="number" placeholder="Valor" id="valor_dolar">
+                <input type="text" id="more" placeholder="Converter Para:" list="moeda1">
+                <datalist id="moeda1">
+                  <option value="Euro"></option>
+                  <option value="Iene"></option>
+                  <option value="Real"></option>
+                </datalist>
+                <div class="btns">
+                    <input type="button" id="send" value="Converter">
+                    <input type="button" id="clear" value="Limpa">
+                </div>
+               
+            </div>
+            <div class="resultado">
+                <h2>Resultado:</h2>
+                <p id="result"></p>
+            </div>
+        </div>
+        
+        
+
+    </div>
+    <script src="javaScript/main.js"></script>
+</body>
+</html>

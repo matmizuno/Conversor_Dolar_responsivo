@@ -36,3 +36,4 @@ const cl = document.getElementById("clear").addEventListener("click", function (
         valor_dolar.value = ''
         more.value = ''
     }) 
+    AOS.init();

@@ -37,7 +37,7 @@ const btn = document.getElementById('send').addEventListener('click', function (
                         result.textContent = `${euro_convert.toFixed(2)} Euros `
                         troca.onclick = function(){
                             euro_convert = valor_dolar.value/corpo.rates.EUR
-                            result.textContent =`${euro_convert.toFixed(0)} Dólares` 
+                            result.textContent =`${euro_convert.toFixed(2)} Dólares` 
                             }
                        
                         break;

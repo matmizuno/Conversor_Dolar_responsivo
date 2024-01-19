@@ -13,16 +13,16 @@ const btn = document.getElementById('send').addEventListener('click', function (
         switch(more.value){
             case 'Real':
                 const real_convert = valor_dolar.value*corpo.rates.BRL
-                result.textContent = real_convert.toFixed(2)
+                result.textContent = `${real_convert.toFixed(2)} Reais`
                 break;
                 case 'Iene'://jpy
                 const iene_converte = valor_dolar.value*corpo.rates.JPY
-                result.textContent = iene_converte.toFixed(2)
+                result.textContent = `${iene_converte.toFixed(2)} Ienes`
                   
                     break;
                     case 'Euro':
                         const euro_convert = valor_dolar.value*corpo.rates.EUR
-                        result.textContent = euro_convert.toFixed(2)
+                        result.textContent = `${euro_convert.toFixed(2)} Euros `
                        
                         break;
         }

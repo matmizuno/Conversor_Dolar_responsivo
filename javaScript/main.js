@@ -9,20 +9,36 @@ const btn = document.getElementById('send').addEventListener('click', function (
         const getMoedas = document.getElementById('more')
         const moedas = more.value
         const  res = document.getElementById('result')
+        const troca = document.getElementById('switch')
+
 
         switch(more.value){
             case 'Real':
-                const real_convert = valor_dolar.value*corpo.rates.BRL
+                let real_convert = valor_dolar.value*corpo.rates.BRL
                 result.textContent = `${real_convert.toFixed(2)} Reais`
+                troca.onclick = function(){
+                    real_convert = valor_dolar.value/ corpo.rates.BRL
+                    result.textContent = `${real_convert.toFixed(2)} Dólares`
+                }
+
                 break;
                 case 'Iene'://jpy
-                const iene_converte = valor_dolar.value*corpo.rates.JPY
+                let iene_converte = valor_dolar.value*corpo.rates.JPY
                 result.textContent = `${iene_converte.toFixed(2)} Ienes`
+                troca.onclick = function(){
+                    iene_converte = (corpo.rates.JPY/corpo.rates.JPY)*valor_dolar.value
+                    result.textContent = `${iene_converte} Dólares`
+                }
+
                   
                     break;
                     case 'Euro':
-                        const euro_convert = valor_dolar.value*corpo.rates.EUR
+                        let euro_convert = valor_dolar.value*corpo.rates.EUR
                         result.textContent = `${euro_convert.toFixed(2)} Euros `
+                        troca.onclick = function(){
+                            euro_convert = valor_dolar.value/corpo.rates.EUR
+                            result.textContent =`${euro_convert.toFixed(0)} Dólares` 
+                            }
                        
                         break;
         }

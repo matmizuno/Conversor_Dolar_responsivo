@@ -1,5 +1,5 @@
 ## Conversor de Dólar 
-Para vizualizar o projeto abre o VS code ou qualquer terminal.
+Para vizualizar o projeto abra o VS code ou qualquer outro terminal.
 ## Comando gits para clonar o repositório
 ```
 $ git clone e a URL do projeto

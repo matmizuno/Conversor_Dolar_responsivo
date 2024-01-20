@@ -72,13 +72,16 @@ input{
     border: 0px;
 }
 #switch:hover{
-    animation: mov-btn 0.2s ease-in-out both ;
+    animation: mov-btn 0.2s ease-in-out both;
+    background-color: rgb(77, 150, 233);
 }
 #send:hover{
     animation: mov-btn 0.2s ease-in-out both ;
+    background-color: rgb(55, 107, 55);
 }
 #clear:hover{
     animation: mov-btn 0.2s ease-in-out both ;
+    background-color: rgb(211, 83, 83);
 }
 
 .container2{

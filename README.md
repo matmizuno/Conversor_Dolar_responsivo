@@ -6,5 +6,5 @@ $ git clone e a URL do projeto
 execute o index.html
 ```
 
-ou pode entrar pelo link do projeto no ar <br>
+Vizualize também pelo link do projeto hospedado<br>
 https://convertdolar.netlify.app/

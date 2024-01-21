@@ -19,10 +19,18 @@ width: 250px;
 margin-top: 2rem;
 animation: mov-img 2s ease-in-out infinite;
 }
+.title{
+    display: flex;
+    text-align: center;
+}
 .title h2{
     font-size: 40px;
     color: rgb(19, 61, 19);
     margin-top: 20px;
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: text 3s steps(20), blk 0.5s;
 }
 
 .inputs{
@@ -30,16 +38,28 @@ animation: mov-img 2s ease-in-out infinite;
     flex-direction: column;
 }
 
-#more{
-    margin-top: 15px;
+
+#value{
+    margin-bottom: 10px;
 }
 
 input{
     height: 35px;
-    width: 200px;
+    width: 195px;
     border-radius: 5px;
     border: 1px solid #242424;
 }
+select{
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #242424;
+    margin-top: 10px;
+}
+#mm{
+    margin-top: 20px;
+}
+
 .btns{
     margin-top: 1rem;
 }
@@ -58,23 +78,13 @@ input{
  #send{
     margin-top: 10px;
 }
+
 #result{
     font-size:  25px;
     color:rgb(19, 61, 19) ;
     border-bottom: 1px solid rgb(19, 61, 19);
 }
-#switch{
-    width: 80px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: rgb(51, 144, 252);
-    color: #fff;
-    border: 0px;
-}
-#switch:hover{
-    animation: mov-btn 0.2s ease-in-out both;
-    background-color: rgb(77, 150, 233);
-}
+
 #send:hover{
     animation: mov-btn 0.2s ease-in-out both ;
     background-color: rgb(55, 107, 55);
@@ -83,11 +93,10 @@ input{
     animation: mov-btn 0.2s ease-in-out both ;
     background-color: rgb(211, 83, 83);
 }
-
 .container2{
     display: flex;
     flex-direction: row;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .container2 h2{
@@ -95,7 +104,7 @@ input{
     font-size:  30px;
 }
 .resultado{
-    margin-left: 2rem;
+    margin-left: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,5 +142,15 @@ input{
     }
     100%{
         transform: translateY(-2px);
+    }
+}
+@keyframes text{
+    from{
+        width: 0;
+    }
+}
+@keyframes blk{
+    50%{
+        border-color: transparent;
     }
 }

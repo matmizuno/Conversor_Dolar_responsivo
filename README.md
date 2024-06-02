@@ -1,8 +1,10 @@
 ## Conversor de Dólar 
-Para vizualizar o projeto abra o VS code ou qualquer outro terminal.
+
+Projeto onde coloquei em prática conceitos sobre API, Scripts básicos e estilizações de site. <br>
+### Para vizualizar o projeto abra o VS code ou qualquer outro terminal.
 ## Comando gits para clonar o repositório
 ```
-$ git clone e a URL do projeto
+$ git clone + a URL do projeto
 execute o index.html
 ```
 
